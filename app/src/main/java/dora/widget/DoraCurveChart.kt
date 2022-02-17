@@ -3,6 +3,7 @@ package dora.widget
 import android.content.Context
 import android.graphics.*
 import android.util.AttributeSet
+import android.util.Log
 import dora.widget.chart.*
 import dora.widget.chart.animation.DoraChartAnimator
 import dora.widget.chart.animation.DoraChartAnimator.Companion.ANIMATOR_TIME
@@ -77,6 +78,9 @@ class DoraCurveChart @JvmOverloads constructor(context: Context, attrs: Attribut
                                 prevY = curY
                             }
                             canvas.drawPath(bezierPath, shapePaint)
+                            val pathMeasure = PathMeasure(bezierPath, false)
+                            val pathLength = pathMeasure.length
+                            Log.d("DoraCurveChart", "pathLength=${pathLength}")
                         }
                         CurveDataSet.Mode.LINEAR -> {
                             val linePath = Path()
@@ -98,6 +102,9 @@ class DoraCurveChart @JvmOverloads constructor(context: Context, attrs: Attribut
                                 }
                             }
                             canvas.drawPath(linePath, shapePaint)
+                            val pathMeasure = PathMeasure(linePath, false)
+                            val pathLength = pathMeasure.length
+                            Log.d("DoraCurveChart", "pathLength=${pathLength}")
                         }
                     }
                 }
