@@ -15,6 +15,8 @@ abstract class DoraAxisRenderer<E : DoraChartEntry, S : DoraChartDataSet<E>>(ani
 
     abstract fun drawXAxis(xAxis: DoraXAxis<E, S>, canvas: Canvas)
     abstract fun drawYAxis(yAxis: DoraYAxis<E, S>, canvas: Canvas)
+    abstract fun drawXAxisScaleValue(xAxis: DoraXAxis<E, S>, canvas: Canvas)
+    abstract fun drawYAxisScaleValue(yAxis: DoraYAxis<E, S>, canvas: Canvas)
     abstract fun drawGridLine(xAxis: DoraXAxis<E, S>, canvas: Canvas)
     abstract fun drawGridLine(yAxis: DoraYAxis<E, S>, canvas: Canvas)
 

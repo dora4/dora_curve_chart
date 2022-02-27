@@ -6,6 +6,8 @@ import android.util.AttributeSet
 import android.view.ViewGroup
 import dora.widget.chart.animation.DoraChartAnimator
 import dora.widget.chart.component.DoraLegend
+import dora.widget.chart.formatter.IntValueFormatter
+import dora.widget.chart.formatter.IValueFormatter
 import dora.widget.chart.renderer.DoraDataRenderer
 import dora.widget.chart.renderer.DoraLegendRenderer
 import kotlin.properties.Delegates
@@ -20,7 +22,12 @@ abstract class DoraChartView<E : DoraChartEntry, S : DoraChartDataSet<E>,
     lateinit var dataRenderer: DoraDataRenderer
     lateinit var legendRenderer: DoraLegendRenderer
     lateinit var animator: DoraChartAnimator
+    internal var valueFormatter: IValueFormatter = IntValueFormatter()
     internal var data: T by Delegates.notNull()
+
+    fun setValueFormatter(formatter: IValueFormatter) {
+        this.valueFormatter = formatter
+    }
 
     fun setData(data: T) {
         this.data = data
