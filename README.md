@@ -6,7 +6,7 @@
 
 分组：【图表引擎】
 
-关系：暂无
+关系：[dora_bar_chart](https://github.com/dora4/dora_bar_chart)
 
 技术要点：基本绘图、Path的使用、贝瑟尔曲线、属性动画
 
