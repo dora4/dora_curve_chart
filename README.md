@@ -26,12 +26,12 @@ https://github.com/dora4/dora_curve_chart/blob/main/art/dora_curve_chart.apk
 
 | 类            | API           | 描述                                       |
 | ------------- | ------------- | ------------------------------------------ |
-| CurveEntry    | value         | 一个点的值                                 |
-| CurveEntry    | showValue     | 是否显示点的值                             |
-| CurveDataSet  | lineWidth     | 一个图例注记代表的数据集的折线的宽度       |
-| CurveDataSet  | lineColor     | 一个图例注记代表的数据集的折线的颜色       |
-| CurveDataSet  | label         | 注记的文本                                 |
-| CurveDataSet  | mode          | 线的模式，LINEAR为折线，CURVE为曲线        |
+| DoraCurveEntry    | value         | 一个点的值                                 |
+| DoraCurveEntry    | showValue     | 是否显示点的值                             |
+| DoraCurveDataSet  | lineWidth     | 一个图例注记代表的数据集的折线的宽度       |
+| DoraCurveDataSet  | lineColor     | 一个图例注记代表的数据集的折线的颜色       |
+| DoraCurveDataSet  | label         | 注记的文本                                 |
+| DoraCurveDataSet  | mode          | 线的模式，LINEAR为折线，CURVE为曲线        |
 | DoraChartView | setData()     | 设置图表的数据                             |
 | DoraChartView | setLegend()   | 设置图表的图例和注记                       |
 | DoraAxis      | axisLineColor | 坐标轴线的颜色                             |

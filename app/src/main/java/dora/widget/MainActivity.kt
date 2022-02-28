@@ -64,7 +64,7 @@ class MainActivity : AppCompatActivity() {
                 35f, resources.displayMetrics)
         legend2.yAxisOffset = TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, 10f,
                 resources.displayMetrics)
-        val dataSet4 = DoraCurveDataSet(label = "R")
+        val dataSet4 = DoraCurveDataSet(label = "RSI6")
         dataSet4.lineColor = Color.parseColor("#FFFFFF")
         dataSet4.addEntry(DoraCurveEntry(17.58f))
         dataSet4.addEntry(DoraCurveEntry(49.69f))
@@ -78,7 +78,7 @@ class MainActivity : AppCompatActivity() {
         dataSet4.addEntry(DoraCurveEntry(67.93f))
         legend2.entries.add(dataSet4.calcLegend())
 
-        val dataSet5 = DoraCurveDataSet(label = "S")
+        val dataSet5 = DoraCurveDataSet(label = "RSI12")
         dataSet5.lineColor = Color.parseColor("#FFFF00")
         dataSet5.addEntry(DoraCurveEntry( 27.85f))
         dataSet5.addEntry(DoraCurveEntry(45.43f))
@@ -92,7 +92,7 @@ class MainActivity : AppCompatActivity() {
         dataSet5.addEntry(DoraCurveEntry( 59.61f))
         legend2.entries.add(dataSet5.calcLegend())
 
-        val dataSet6 = DoraCurveDataSet(label = "I")
+        val dataSet6 = DoraCurveDataSet(label = "RSI24")
         dataSet6.lineColor = Color.parseColor("#F00FFF")
         dataSet6.addEntry(DoraCurveEntry( 34.19f))
         dataSet6.addEntry(DoraCurveEntry( 42.65f))
